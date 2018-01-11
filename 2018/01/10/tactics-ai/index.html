@@ -3,20 +3,23 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Archive: 2018 | Alvaro Barúa</title>
+    <title>Tactics AI | Alvaro Barúa</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="description" content="Alvaro&apos;s Portfolio">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Alvaro Barúa">
-<meta property="og:url" content="https://alvarobarua.github.io/archives/2018/index.html">
+        <meta name="keywords" content="" />
+    
+    <meta name="description" content="This project was developed for the Artificial Intelligence course during my bachelor’s degree.It was a team project, but as I was the only one that knew how to use Unity, so I was in charge of every">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tactics AI">
+<meta property="og:url" content="https://alvarobarua.github.io/2018/01/10/tactics-ai/index.html">
 <meta property="og:site_name" content="Alvaro Barúa">
-<meta property="og:description" content="Alvaro&apos;s Portfolio">
+<meta property="og:description" content="This project was developed for the Artificial Intelligence course during my bachelor’s degree.It was a team project, but as I was the only one that knew how to use Unity, so I was in charge of every">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-01-10T23:20:55.442Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Alvaro Barúa">
-<meta name="twitter:description" content="Alvaro&apos;s Portfolio">
+<meta name="twitter:title" content="Tactics AI">
+<meta name="twitter:description" content="This project was developed for the Artificial Intelligence course during my bachelor’s degree.It was a team project, but as I was the only one that knew how to use Unity, so I was in charge of every">
     
 
     
@@ -123,326 +126,114 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-archive"></i>Archive: 2018
+    <a class="page-title-link" href="/categories/Personal-Work/">Personal Work</a>
     </h1>
 </div>
                         <div class="main-body-content">
-                            
-
-    
-    
+                            <article id="post-tactics-ai" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2018" class="archive-year"><i class="icon fa fa-calendar-o"></i>2018</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Personal-Work/">Personal Work</a>
-            </div>
-            <div class="date"><time datetime="2018-01-10T23:20:17.000Z" itemprop="datePublished">2018-01-10</time></div>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2018/01/10/glitchengine-v2/">GlitchEngine V2</a>
+        Tactics AI
         </h1>
     
 
-        <p class="article-excerpt">
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2018/01/10/tactics-ai/" class="article-date">
+            <time datetime="2018-01-10T22:45:19.000Z" itemprop="datePublished">2018-01-10</time>
+        </a>
+    </div>
+
+                
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <div class="video-container"><iframe src="//www.youtube.com/embed/_v-HQldMh70" frameborder="0" allowfullscreen></iframe></div>
+<p>This project was developed for the Artificial Intelligence course during my bachelor’s degree.<br>It was a team project, but as I was the only one that knew how to use Unity, so I was in charge of every aspect of the implementation. My teammates helped me with the graphic design and algorithm design.</p>
+<p>For this particular case, we design an <a href="https://en.wikipedia.org/wiki/Minimax" target="_blank" rel="noopener">MinMax algorithm</a> that took into account position, health and defence state to calculate the optimal move.<br>When playing on easy, the AI uses a completely random approach, in medium, the AI only calculates its move based on the current playfield, and in hard, it takes into account all the possible moves of the enemy in the next turn and makes a choice based on the score obtained for every possible choice.</p>
+
+        </div>
+        <footer class="article-footer">
             
-I presented this project as part of the graphics module of the MSc I am currently undertaking.I decided to not use the framework provided and instead work on my own idea because I wanted to make a se
-        </p>
+
+
+
+    <a data-url="https://alvarobarua.github.io/2018/01/10/tactics-ai/" data-id="cjc9ou7100009ksq0cfu403vj" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
     </div>
 </article>
-    
 
+    <section id="comments">
     
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Personal-Work/">Personal Work</a>
-            </div>
-            <div class="date"><time datetime="2018-01-10T22:45:19.000Z" itemprop="datePublished">2018-01-10</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2018/01/10/tactics-ai/">Tactics AI</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            
-This project was developed for the Artificial Intelligence course during my bachelor’s degree.It was a team project, but as I was the only one that knew how to use Unity, so I was in charge of every 
-        </p>
-    </div>
-</article>
-    
-        </div>
-    
-
-    
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Personal-Work/">Personal Work</a>
-            </div>
-            <div class="date"><time datetime="2018-01-10T22:45:11.000Z" itemprop="datePublished">2018-01-10</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2018/01/10/pacman-ai-pathfinding/">Pacman AI and Pathfinding</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            
-This project was made for the course of advanced algorithms during my bachelor’s degree.It implemented a simple finite state machine for the ghosts behaviour and Johnson’s  algorithm for pathfinding.
-        </p>
-    </div>
-</article>
-    
-
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Personal-Work/">Personal Work</a>
-            </div>
-            <div class="date"><time datetime="2018-01-09T18:26:50.000Z" itemprop="datePublished">2018-01-09</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2018/01/09/glitchengine-v1/">GlitchEngine V1</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            This was my first attempt at putting together everything I knew about C++ and OpenGL.It is a complete game engine that uses Lua as a scripting language, it focuses on 2D games as I was trying to make 
-        </p>
-    </div>
-</article>
-    
-        </div>
-    
-
-    
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Hired-Work/">Hired Work</a>
-            </div>
-            <div class="date"><time datetime="2018-01-08T22:18:32.000Z" itemprop="datePublished">2018-01-08</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2018/01/08/tunche/">Tunche</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            
-This was my last project before leaving Leap Game Studio to come to the UK to study at Newcastle University.
-It is 2D side-scrolling brawler with roguelike elements. The target systems where the PS4 
-        </p>
-    </div>
-</article>
-    
-
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Hired-Work/">Hired Work</a>
-            </div>
-            <div class="date"><time datetime="2018-01-08T22:11:06.000Z" itemprop="datePublished">2018-01-08</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2018/01/08/sliceandrise/">Slice And Rise</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            
-This game, in my opinion, was my biggest contribution to the company (Leap Game Studio). It was the first company IP I worked on, and the only one that got released during my time there.
-It is basica
-        </p>
-    </div>
-</article>
-    
-        </div>
-    
-
-    
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Hired-Work/">Hired Work</a>
-            </div>
-            <div class="date"><time datetime="2018-01-08T21:56:53.000Z" itemprop="datePublished">2018-01-08</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2018/01/08/bulldosis/">Bulldosis</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            Bulldosis is a game for IOS/Android developed for the Peruvian representation of CAT. The game is very simple, it consists of an infinitely long slope, which gets steeper by the second until it reache
-        </p>
-    </div>
-</article>
-    
-
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Hired-Work/">Hired Work</a>
-            </div>
-            <div class="date"><time datetime="2018-01-08T20:03:30.000Z" itemprop="datePublished">2018-01-08</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2018/01/08/niusgames/">Niusgames</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            One of the things we liked doing on Leap Game Studio, was to make newsgames based on current events in our country, during my time working there, I had the chance to work on 3 different games, all of 
-        </p>
-    </div>
-</article>
-    
-        </div>
-    
-
-    
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Hired-Work/">Hired Work</a>
-            </div>
-            <div class="date"><time datetime="2018-01-08T18:42:50.000Z" itemprop="datePublished">2018-01-08</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2018/01/08/chiplay/">Chiplay</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            
-I worked on this game while on my first paid job, it was part of an ad campaign for a bubblegum brand.The aim of the client was to make the brand popular again by distributing codes printed inside th
-        </p>
-    </div>
-</article>
-    
-
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Hired-Work/">Hired Work</a>
-            </div>
-            <div class="date"><time datetime="2018-01-08T17:39:20.000Z" itemprop="datePublished">2018-01-08</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2018/01/08/mgx/">MGX Fishing App</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            This was my first time diving into deep mobile application development.I decided to use Xamarin in order to minimize development time based on the ability to deploy to both IOS and Android using almos
-        </p>
-    </div>
-</article>
-    
-        </div>
-    
-
-
-    </div></section>
-
-
-    <nav id="page-nav">
-        <span class="pages">Page 1 of 2</span>
-        <span class="page-number current">1</span><a class="page-number" href="/archives/2018/page/2/">2</a><a class="extend next" rel="next" href="/archives/2018/page/2/">&raquo;</a>
-    </nav>
+    </section>
 
 
                         </div>
@@ -495,6 +286,29 @@ I worked on this game while on my first paid job, it was part of an ad campaign 
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2018/01/10/glitchengine-v2/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            GlitchEngine V2
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2018/01/10/pacman-ai-pathfinding/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Pacman AI and Pathfinding</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
