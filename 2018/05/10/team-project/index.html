@@ -3,23 +3,23 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Physics Engine | Alvaro Barúa</title>
+    <title>Team Project | Alvaro Barúa</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="" />
     
-    <meta name="description" content="I developed this Physics Engine as part of the Advanced Game Technologies coursework.It implements a Newtonian solver using Semi-Implicit Euler Integration and has the following elements:  Collision">
+    <meta name="description" content="This project was developed as part of the “Engineering Gaming Solutions within a Team” course, the goal of the project was to have a Splatoon-like game where you painted the environment to earn po">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Physics Engine">
-<meta property="og:url" content="https://alvarobarua.github.io/2018/02/01/physics/index.html">
+<meta property="og:title" content="Team Project">
+<meta property="og:url" content="https://alvarobarua.github.io/2018/05/10/team-project/index.html">
 <meta property="og:site_name" content="Alvaro Barúa">
-<meta property="og:description" content="I developed this Physics Engine as part of the Advanced Game Technologies coursework.It implements a Newtonian solver using Semi-Implicit Euler Integration and has the following elements:  Collision">
+<meta property="og:description" content="This project was developed as part of the “Engineering Gaming Solutions within a Team” course, the goal of the project was to have a Splatoon-like game where you painted the environment to earn po">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-02-01T16:23:18.112Z">
+<meta property="og:updated_time" content="2018-05-10T17:13:40.369Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Physics Engine">
-<meta name="twitter:description" content="I developed this Physics Engine as part of the Advanced Game Technologies coursework.It implements a Newtonian solver using Semi-Implicit Euler Integration and has the following elements:  Collision">
+<meta name="twitter:title" content="Team Project">
+<meta name="twitter:description" content="This project was developed as part of the “Engineering Gaming Solutions within a Team” course, the goal of the project was to have a Splatoon-like game where you painted the environment to earn po">
     
 
     
@@ -130,14 +130,14 @@
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-physics" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-team-project" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        Physics Engine
+        Team Project
         </h1>
     
 
@@ -147,8 +147,8 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2018/02/01/physics/" class="article-date">
-            <time datetime="2018-02-01T15:49:51.000Z" itemprop="datePublished">2018-02-01</time>
+        <a href="/2018/05/10/team-project/" class="article-date">
+            <time datetime="2018-05-10T17:13:05.000Z" itemprop="datePublished">2018-05-10</time>
         </a>
     </div>
 
@@ -157,18 +157,34 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <div class="video-container"><iframe src="//www.youtube.com/embed/w6p2U3D5SIc" frameborder="0" allowfullscreen></iframe></div>
-<p>I developed this Physics Engine as part of the Advanced Game Technologies coursework.<br>It implements a Newtonian solver using Semi-Implicit Euler Integration and has the following elements:</p>
+            <div class="video-container"><iframe src="//www.youtube.com/embed/_bJ-0FHgj6E" frameborder="0" allowfullscreen></iframe></div>
+<div class="video-container"><iframe src="//www.youtube.com/embed/aq-7KydZTSo" frameborder="0" allowfullscreen></iframe></div>
+<div class="video-container"><iframe src="//www.youtube.com/embed/w_4A4lM9Ak4" frameborder="0" allowfullscreen></iframe></div>
+<div class="video-container"><iframe src="//www.youtube.com/embed/670dR90OQoE" frameborder="0" allowfullscreen></iframe></div>
+<p>This project was developed as part of the “Engineering Gaming Solutions within a Team” course, the goal of the project was to have a Splatoon-like game where you painted the environment to earn points. Our project was developed from the beginning with cross-platform development in mind and as such, we put a CMake build system in place that allowed us to change target platforms with ease, at the moment of handling the project, our game was able to run on Window/Mac/Linux/Android and PS4 with networked multiplayer among all of them.</p>
+<p>The whole engine was developed from scratch in the span of 6 weeks by a 7 people team.</p>
+<p>My main contributions to this projects where:</p>
 <ul>
-<li>Collision shapes for both boxes and spheres.</li>
-<li>Distance constraints.</li>
-<li>Collision resolution.</li>
-<li>Collision event handling.</li>
-<li>Collision nullification to use as trigger.</li>
-<li>Broadphase culling (Octree and SAP).</li>
-<li>OpenCL accelerated manifold solver (Not completely stable, can be deactivated).</li>
+<li>Full rendering pipeline (OpenGL and PS4)</li>
+<li>Vertex painting for the paint effect using OpenCL, and GNM Compute Shaders on PS4.</li>
+<li>Entity Component System as the base for the engine.</li>
+<li>Memory usage and allocations tracking.</li>
 </ul>
-<p>Overall, it was a challenging project, but physics programming is not exactly something I find particularly exciting.</p>
+<h2 id="Technology-Used"><a href="#Technology-Used" class="headerlink" title="Technology Used"></a>Technology Used</h2><ul>
+<li>C++</li>
+<li>OpenGL</li>
+<li>GLSL</li>
+<li>GNM (PS4)</li>
+<li>OpenCL</li>
+<li>GNM Compute Shaders</li>
+</ul>
+<h2 id="Libraries-Used"><a href="#Libraries-Used" class="headerlink" title="Libraries Used"></a>Libraries Used</h2><ul>
+<li>SDL2 (Window and Input handling)</li>
+<li>Bullet (Physics)</li>
+<li>GLM (Math)</li>
+<li>OpenALSoft (Audio, not on PS4 as we used the PS4 native audio libraries)</li>
+<li>ENet (Networking, we had to make a fork of the library and some changes to it, so it would also work on PS4)</li>
+</ul>
 
         </div>
         <footer class="article-footer">
@@ -176,7 +192,7 @@
 
 
 
-    <a data-url="https://alvarobarua.github.io/2018/02/01/physics/" data-id="cjh0smepl0008pwq0lchzr66z" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://alvarobarua.github.io/2018/05/10/team-project/" data-id="cjh0smepw000npwq0usr22zlm" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -283,20 +299,10 @@
         
 <nav id="article-nav">
     
-        <a href="/2018/02/01/ai-networking/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">newer</strong>
-        <p class="article-nav-title">
-        
-            AI/Networking
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2018/01/10/glitchengine-v2/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/02/20/sfas18/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">GlitchEngine V2</p>
+        <p class="article-nav-title">SFAS18 - Capsule Bash</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
