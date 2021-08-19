@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>T5 Editor | Alvaro Barúa</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="" />
+    
+    <meta name="description" content="After completing our team project, everyone was left with a feeling that it could become something bigger, and so, we decided to keep working on whatever we thought was a good idea for the engine. Fro">
+<meta property="og:type" content="article">
+<meta property="og:title" content="T5 Editor">
+<meta property="og:url" content="http://alvarobarua.github.io/2018/05/15/editor/index.html">
+<meta property="og:site_name" content="Alvaro Barúa">
+<meta property="og:description" content="After completing our team project, everyone was left with a feeling that it could become something bigger, and so, we decided to keep working on whatever we thought was a good idea for the engine. Fro">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://alvarobarua.github.io/thumbnails/t5-editor.jpg">
+<meta property="article:published_time" content="2018-05-15T13:13:24.000Z">
+<meta property="article:modified_time" content="2021-08-19T12:05:37.024Z">
+<meta property="article:author" content="Alvaro Barúa">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://alvarobarua.github.io/thumbnails/t5-editor.jpg">
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/titillium-web/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/libs/jquery/3.5.0/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                    <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Hired-Work/">Hired Work</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Personal-Work/">Personal Work</a></li></ul>
+                                
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/2018/01/08/about-me/index.html">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Personal-Work/">Personal Work</a>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-editor" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        T5 Editor
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/2018/05/15/editor/" class="article-date">
+       <time datetime="2018-05-15T13:13:24.000Z" itemprop="datePublished">2018-05-15</time>
+    </a>
+  </div>
+
+
+<div class="article-date">
+  <i class="fa fa-calendar-plus-o"></i>
+  <a href="/2018/05/15/editor/" class="article-date">
+     <time datetime="2021-08-19T12:05:37.024Z" itemprop="dateModified">2021-08-19</time>
+  </a>
+</div>
+
+
+                
+
+                
+                
+
+                
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+
+            
+
+            
+
+            <p>After completing our team project, everyone was left with a feeling that it could become something bigger, and so, we decided to keep working on whatever we thought was a good idea for the engine. From my end, I was really unhappy with the way we managed the creation of the levels, so the obvious next step was to create a level editor.</p>
+<p>I started by adding a library called cereal to be able to serialize classes to JSON files, after some tinkering, I was able to save the whole entity list into a single file while taking into account hierarchy, to that I added some simple things like screen clear color and current skybox; and with that I had successfully generated a simple but complete level file.</p>
+<p>I used Qt as GUI library because it has an OpenGLWidget class that you can use to easily run OpenGL code inside a window interface, within no time, I was able to run the engine, and from there I just kept adding things, like the entity explorer (which shows all the components added to the selected entity) and the level entities list (which shows all entities with their complete scene graph hierarcy).</p>
+<p>I also kept working on the rendering pipeline and changed the frustum culling from sphere based to AABB based, expanded the support of the GLTF format (only meshes and materials so far) and added full PBR support with the metallic roughness model.</p>
+<p>This is a short video of the current state of the editor:</p>
+<div class="video-container"><iframe src="https://www.youtube.com/embed/0fhMOhMj3ls" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+<h2 id="Plans-for-the-future"><a href="#Plans-for-the-future" class="headerlink" title="Plans for the future"></a>Plans for the future</h2><p>I’m planning on adding some more support for the editor itself as right now you can only position elements on the scene, I also want to implement shadow cascading and forward+ rendering as they are things I have never tried before and seem to be really fun and challenging to do.</p>
+<h2 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h2><p>I added CSM shadows to the engine, the video quality is not good at all because of LinkedIn compression and I lost the source video to reupload.<br><br><div class="video-container"><iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6404104557768568832?compact=1" frameborder="0" allowfullscreen></iframe></div></p>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://alvarobarua.github.io/2018/05/15/editor/" data-id="cksiwnci6000554q0ezqr1196" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "Alvaro Barúa"
+        },
+        "headline": "T5 Editor",
+        "image": "http://alvarobarua.github.io/thumbnails/t5-editor.jpg",
+        "keywords": "",
+        "genre": "Personal Work",
+        "datePublished": "2018-05-15",
+        "dateCreated": "2018-05-15",
+        "dateModified": "2021-08-19",
+        "url": "http://alvarobarua.github.io/2018/05/15/editor/",
+        "description": "After completing our team project, everyone was left with a feeling that it could become something bigger, and so, we decided to keep working on whatever we thought was a good idea for the engine. Fro",
+        "wordCount": 349
+    }
+</script>
+
+</article>
+
+    <section id="comments">
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="linkedin" href="https://www.linkedin.com/in/alvaro-barua/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-linkedin"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/AlvaroBarua" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="gitlab" href="https://gitlab.com/alvaro.baruae" target="_blank" rel="noopener">
+                        <i class="icon fa fa-gitlab"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2019/05/14/vulkan-engine/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            Vulkan Engine
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2018/05/10/team-project/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Team Project</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2021/08/19/engine-update/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/thumbnails/pacha.png)" alt="Engine Update" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Personal-Work/">Personal Work</a></p>
+                            <p class="item-title"><a href="/2021/08/19/engine-update/" class="title">Engine Update</a></p>
+                            <p class="item-date"><time datetime="2021-08-18T23:33:00.000Z" itemprop="datePublished">2021-08-19</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/05/14/vulkan-engine/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/thumbnails/vulkan-engine.jpg)" alt="Vulkan Engine" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Personal-Work/">Personal Work</a></p>
+                            <p class="item-title"><a href="/2019/05/14/vulkan-engine/" class="title">Vulkan Engine</a></p>
+                            <p class="item-date"><time datetime="2019-05-14T19:45:03.000Z" itemprop="datePublished">2019-05-14</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/15/editor/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/thumbnails/t5-editor.jpg)" alt="T5 Editor" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Personal-Work/">Personal Work</a></p>
+                            <p class="item-title"><a href="/2018/05/15/editor/" class="title">T5 Editor</a></p>
+                            <p class="item-date"><time datetime="2018-05-15T13:13:24.000Z" itemprop="datePublished">2018-05-15</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/10/team-project/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/thumbnails/team-project.jpg)" alt="Team Project" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Personal-Work/">Personal Work</a></p>
+                            <p class="item-title"><a href="/2018/05/10/team-project/" class="title">Team Project</a></p>
+                            <p class="item-date"><time datetime="2018-05-10T17:13:05.000Z" itemprop="datePublished">2018-05-10</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/02/20/sfas18/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/thumbnails/sfas18.jpg)" alt="SFAS18 - Capsule Bash" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Personal-Work/">Personal Work</a></p>
+                            <p class="item-title"><a href="/2018/02/20/sfas18/" class="title">SFAS18 - Capsule Bash</a></p>
+                            <p class="item-date"><time datetime="2018-02-20T08:25:30.000Z" itemprop="datePublished">2018-02-20</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hired-Work/">Hired Work</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Personal-Work/">Personal Work</a><span class="category-list-count">11</span></li></ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2021 Alvaro Barúa</p>
+                
+                <p>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="https://github.com/ppoffice" target="_blank">PPOffice</a></p>
+                
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+    
+
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+    
+    
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+</body>
+</html>

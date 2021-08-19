@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>Vulkan Engine | Alvaro Barúa</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="" />
+    
+    <meta name="description" content="Why?As you can see from other posts, I have been working with OpenGL for quite some time and I feel that I am at a point in which I don’t know everything about it, but feel confident enough to work wi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vulkan Engine">
+<meta property="og:url" content="http://alvarobarua.github.io/2019/05/14/vulkan-engine/index.html">
+<meta property="og:site_name" content="Alvaro Barúa">
+<meta property="og:description" content="Why?As you can see from other posts, I have been working with OpenGL for quite some time and I feel that I am at a point in which I don’t know everything about it, but feel confident enough to work wi">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://alvarobarua.github.io/thumbnails/vulkan-engine.jpg">
+<meta property="article:published_time" content="2019-05-14T19:45:03.000Z">
+<meta property="article:modified_time" content="2021-08-19T12:16:19.470Z">
+<meta property="article:author" content="Alvaro Barúa">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://alvarobarua.github.io/thumbnails/vulkan-engine.jpg">
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/titillium-web/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/libs/jquery/3.5.0/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                    <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Hired-Work/">Hired Work</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Personal-Work/">Personal Work</a></li></ul>
+                                
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/2018/01/08/about-me/index.html">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Personal-Work/">Personal Work</a>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-vulkan-engine" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        Vulkan Engine
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/2019/05/14/vulkan-engine/" class="article-date">
+       <time datetime="2019-05-14T19:45:03.000Z" itemprop="datePublished">2019-05-14</time>
+    </a>
+  </div>
+
+
+<div class="article-date">
+  <i class="fa fa-calendar-plus-o"></i>
+  <a href="/2019/05/14/vulkan-engine/" class="article-date">
+     <time datetime="2021-08-19T12:16:19.470Z" itemprop="dateModified">2021-08-19</time>
+  </a>
+</div>
+
+
+                
+
+                
+                
+
+                
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+
+            
+
+            
+
+            <h2 id="Why"><a href="#Why" class="headerlink" title="Why?"></a>Why?</h2><p>As you can see from other posts, I have been working with OpenGL for quite some time and I feel that I am at a point in which I don’t know everything about it, but feel confident enough to work with it in a professional environment. So, in order to keep up with the current trends, I decided to learn Vulkan, I am currently still learning things about it and taking it slow to make sure I learn it well as well as developing a robust engine architecture in order to support multiple graphics API’s.</p>
+<img src="/2019/05/14/vulkan-engine/ga.jpg" class="" title="Game">
+
+<p>As of right now, the “engine” if you can call it that at this stage in development, have the following features:</p>
+<ul>
+<li>Offline shader multi-compiler using glslc.</li>
+<li>Technique like files that define pipeline state and shader passes for a material.</li>
+<li>Material system that allows enabling/disabling shader defines at runtime.</li>
+<li>Multi-threaded renderer.</li>
+<li>Entity-Component driven.</li>
+<li>Clear separation in systems to allow multiple API’s.</li>
+<li>Easy to swap between different lightning models.</li>
+<li>GLTF (Meshses and Materials) and DDS (2D and CubeMap) formats support.</li>
+</ul>
+<h2 id="Editor"><a href="#Editor" class="headerlink" title="Editor"></a>Editor</h2><img src="/2019/05/14/vulkan-engine/ed.jpg" class="" title="Editor">
+
+<p>As part of the development, and mainly because of the shader multi-compiler (I needed a way of defining material properties so that I didn’t have to load a technique file with 16K+ shader permutations every time), I decided to implement an editor. </p>
+<p>This time around I don’t want it to be just a level editor, but a complete editor with live objects editing and all the bell and whistles modern engines have. As I had already worked on Qt, this time I wanted to try something different and went with ImGui which has been surprisingly easy to use.</p>
+<p>The editor is still in early development stages but already have the following:</p>
+<ul>
+<li>Scene Graph tree.</li>
+<li>Entity explorer, where all the components are shown with their expose variables.</li>
+<li>A log window with different categories and search filter.</li>
+<li>Resource explorer with directory watcher that updates in real-time.</li>
+<li>Scene graph drag and drop to reparent transforms.</li>
+</ul>
+<h2 id="What’s-Next"><a href="#What’s-Next" class="headerlink" title="What’s Next"></a>What’s Next</h2><p>There are still a lot of features I would like to add to both of them such as:</p>
+<h3 id="Engine"><a href="#Engine" class="headerlink" title="Engine"></a>Engine</h3><ul>
+<li>Indirect drawing of static objects with GPU culling using material batching.</li>
+<li>Cascade shadow maps using probably VSM to get better quality soft shadows.</li>
+<li>Terrain rendering with frustum culling, indirect drawing and tessellation.</li>
+<li>Depth, Normals and Motion Vectors pre-pass.</li>
+<li>Post-processing stack.</li>
+<li>Physics using PhysX.</li>
+</ul>
+<h3 id="Editor-1"><a href="#Editor-1" class="headerlink" title="Editor"></a>Editor</h3><ul>
+<li>Scene serialization.</li>
+<li>Full support for all basic engine features.</li>
+<li>User components reflection without the need of adding them to the editor project by generating stub components from the .h files.</li>
+<li>Network link between editor and game to synchronize the state of the game on the editor and be able to edit components or add objects on the fly for faster iteration.</li>
+</ul>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://alvarobarua.github.io/2019/05/14/vulkan-engine/" data-id="cksiwnciq000y54q0hcxi4s31" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "Alvaro Barúa"
+        },
+        "headline": "Vulkan Engine",
+        "image": "http://alvarobarua.github.io/thumbnails/vulkan-engine.jpg",
+        "keywords": "",
+        "genre": "Personal Work",
+        "datePublished": "2019-05-14",
+        "dateCreated": "2019-05-14",
+        "dateModified": "2021-08-19",
+        "url": "http://alvarobarua.github.io/2019/05/14/vulkan-engine/",
+        "description": "Why?As you can see from other posts, I have been working with OpenGL for quite some time and I feel that I am at a point in which I don’t know everything about it, but feel confident enough to work wi",
+        "wordCount": 448
+    }
+</script>
+
+</article>
+
+    <section id="comments">
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="linkedin" href="https://www.linkedin.com/in/alvaro-barua/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-linkedin"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/AlvaroBarua" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="gitlab" href="https://gitlab.com/alvaro.baruae" target="_blank" rel="noopener">
+                        <i class="icon fa fa-gitlab"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2021/08/19/engine-update/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            Engine Update
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2018/05/15/editor/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">T5 Editor</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2021/08/19/engine-update/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/thumbnails/pacha.png)" alt="Engine Update" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Personal-Work/">Personal Work</a></p>
+                            <p class="item-title"><a href="/2021/08/19/engine-update/" class="title">Engine Update</a></p>
+                            <p class="item-date"><time datetime="2021-08-18T23:33:00.000Z" itemprop="datePublished">2021-08-19</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/05/14/vulkan-engine/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/thumbnails/vulkan-engine.jpg)" alt="Vulkan Engine" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Personal-Work/">Personal Work</a></p>
+                            <p class="item-title"><a href="/2019/05/14/vulkan-engine/" class="title">Vulkan Engine</a></p>
+                            <p class="item-date"><time datetime="2019-05-14T19:45:03.000Z" itemprop="datePublished">2019-05-14</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/15/editor/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/thumbnails/t5-editor.jpg)" alt="T5 Editor" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Personal-Work/">Personal Work</a></p>
+                            <p class="item-title"><a href="/2018/05/15/editor/" class="title">T5 Editor</a></p>
+                            <p class="item-date"><time datetime="2018-05-15T13:13:24.000Z" itemprop="datePublished">2018-05-15</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/10/team-project/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/thumbnails/team-project.jpg)" alt="Team Project" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Personal-Work/">Personal Work</a></p>
+                            <p class="item-title"><a href="/2018/05/10/team-project/" class="title">Team Project</a></p>
+                            <p class="item-date"><time datetime="2018-05-10T17:13:05.000Z" itemprop="datePublished">2018-05-10</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/02/20/sfas18/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/thumbnails/sfas18.jpg)" alt="SFAS18 - Capsule Bash" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Personal-Work/">Personal Work</a></p>
+                            <p class="item-title"><a href="/2018/02/20/sfas18/" class="title">SFAS18 - Capsule Bash</a></p>
+                            <p class="item-date"><time datetime="2018-02-20T08:25:30.000Z" itemprop="datePublished">2018-02-20</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hired-Work/">Hired Work</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Personal-Work/">Personal Work</a><span class="category-list-count">11</span></li></ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2021 Alvaro Barúa</p>
+                
+                <p>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="https://github.com/ppoffice" target="_blank">PPOffice</a></p>
+                
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+    
+
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+    
+    
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+</body>
+</html>
